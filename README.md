@@ -30,9 +30,7 @@ This project demonstrates full-stack development using a modern tech stack and r
 - What is Machine Learning?  
 - Difference between AI and ML  
 - Supervised vs Unsupervised learning  
-- What is overfitting?  
-- Explain neural networks simply  
-- How does ChatGPT work?  
+- What is overfitting?    
 
 ---
 
@@ -68,3 +66,20 @@ ml-ai-chatbot/
 │   └── .env
 │
 └── README.md
+---
+
+## ▶️ How to Run Locally
+
+### Backend Setup
+```bash
+cd backend
+npm install
+node server.js
+```
+
+## 📚 Learning Outcomes
+- Built a full-stack AI application
+- Integrated OpenAI API securely
+- Learned frontend–backend communication
+- Improved prompt handling and API usage
+- Understood deployment workflow
