@@ -55,3 +55,16 @@ This project demonstrates full-stack development using a modern tech stack and r
 ---
 
 ## 📁 Project Structure
+ml-ai-chatbot/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+└── README.md
