@@ -36,12 +36,12 @@ This project demonstrates full-stack development using a modern tech stack and r
 
 ## 🧩 Tech Stack
 
-### Frontend
+ Frontend
 - HTML  
 - CSS  
 - Vanilla JavaScript  
 
-### Backend
+ Backend
 - Node.js  
 - Express.js  
 - OpenAI API  
@@ -52,14 +52,15 @@ This project demonstrates full-stack development using a modern tech stack and r
 
 ---
 
-## 🔗 Live Demo
-Coming soon 🚀
+##  Live Demo
+Coming soon (deployment in progress) 
 ---
 ## 📸 Screenshots
+
 | Chat Interface | AI Response |
 |----------------|------------|
 | ![](screenshots/ui.png) | ![](screenshots/chat.png) |
-
+Screenshots will be added soon.
 ---
 ## ▶️ How to Run Locally
 
@@ -96,7 +97,7 @@ node server.js
 - Improved prompt handling and API usage
 - Understood deployment workflow
 ---
-### 🔮 Future Enhancements
+## 🔮 Future Enhancements
 - Topic-based buttons (AI / ML / DL / NLP)
 - Code examples in AI responses
 - User authentication
@@ -104,5 +105,5 @@ node server.js
 - Voice-based AI tutor
 - PDF notes generator
 ---
-### 👩‍💻 Author
-- Kirti Sharma
+## 👩‍💻 Author
+ Kirti Sharma
