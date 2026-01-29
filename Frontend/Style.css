@@ -37,3 +37,35 @@ display: flex;
 flex-direction: column;
 
 }
+
+.hidden {
+
+} display: none;
+
+.header {
+
+}
+
+background: #222;
+
+color: white;
+
+padding: 10px;
+
+text-align: center;
+
+#messages {
+
+flex: 1;
+
+} padding: 10px; overflow-y: auto;
+
+.input-area { } display: flex;
+
+input {
+
+flex: 1;
+
+padding: 8px;
+
+}
