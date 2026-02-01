@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-<title>ML & AI Chatbot</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <title>ML & AI Chatbot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<button id="chat-btn">0</button>
+<button id="chat-btn">🤖</button>
 
 <div id="chatbox" class="hidden">
+  <div class="header">ML & AI Assistant</div>
 
-<div class="header">ML & AI
+  <div id="messages"></div>
 
-Assistant</div>
-
-<div id="messages"></div>
-
-<div class="input-area">
-
-<input id="userInput"
-
-placeholder="Ask about AI, ML, Deep Learning..." />
-
-<button onclick="sendMessage()">Send</
-
-button>
-
-</div>
-
+  <div class="input-area">
+    <input id="userInput" placeholder="Ask about AI, ML, Deep Learning..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
