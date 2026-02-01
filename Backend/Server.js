@@ -1,23 +1,45 @@
-import express from "express"; import cors from "cors"; import dotenv from "dotenv"; import OpenAl from "openai";
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import OpenAI from "openai";
 
 dotenv.config();
 
-const app = express(); app.use(cors()); app.use(express.json());
+const app = express();
+app.use(cors());
+app.use(express.json());
 
 const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
 
-apiKey: process.env.OPENAI_API_KEY });
+app.post("/chat", async (req, res) => {
+  try {
+    const userMessage = req.body.message;
 
-app.post("/chat", async (req, res) => { try {
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: "You are an expert AI and Machine Learning tutor. Explain concepts simply with examples."
+        },
+        {
+          role: "user",
+          content: userMessage
+        }
+      ]
+    });
 
-const userMessage = req.body.message;
+    res.json({
+      reply: completion.choices[0].message.content
+    });
 
-const completion = await openai.chat.completions.create({ model: "gpt-40-mini", messages: [ { role: "system", content: "You are an expert Al and Machine Learning tutor. Explain concepts simply with examples." },
+  } catch (error) {
+    res.status(500).json({ error: "AI service error" });
+  }
+});
 
-{ role: "user", content: userMessage } 1 });
-
-res.json({ reply: completion.choices[0].messa ge.content });
-
-} catch (error) { res.status(500).json({ error: "Al service error" }); } });
-
-app.listen(3000, () => { console.log("ML/AI Chatbot running on port 3000"); });
+app.listen(3000, () => {
+  console.log("ML/AI Chatbot running on port 3000");
+});
